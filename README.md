@@ -11,6 +11,17 @@ Partitions
 * / (8G)
 * /var (Remainder of drive)
 
+Systemd
+-------
+
+See the documentation at https://wiki.debian.org/systemd to install and enable systemd on Debian.
+
+Other links that might be of interest:
+
+* http://coreos.com/docs/launching-containers/launching/getting-started-with-systemd/
+* https://docs.docker.com/articles/host_integration/
+* http://www.freedesktop.org/wiki/Software/systemd/
+
 Docker
 ------
 
