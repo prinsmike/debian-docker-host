@@ -1,11 +1,14 @@
 Install
 =======
 
-* _vim_
+* __vim__
+
     A useful text editor that should be installed on all host operating systems as well as all docker containers that allow interactivity.
-* _OpenSSH_
+* __OpenSSH__
+
     OpenSSH must be installed on all host operating systems. It is also useful if installed on interactive docker containers.
-* _Systemd_
+* __Systemd__
+
     Systemd should be used to manage docker as well as all docker containers on the host operating system. Systemd is not currently a good solution for running services inside containers; instead, supervisord should be used until there is a straightforward way to utilize Systemd inside docker containers. Take a look at the following links for more information:
 
     - https://github.com/dotcloud/docker/pull/5773
