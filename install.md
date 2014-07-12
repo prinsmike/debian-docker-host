@@ -1,6 +1,8 @@
 Install
 =======
 
+This file provides some suggestions for software to install on a Debian host installation.
+
 * __vim__
 
     A useful text editor that should be installed on all host operating systems as well as all docker containers that allow interactivity.
@@ -15,3 +17,7 @@ Install
     - https://github.com/dotcloud/docker/issues/3629
     - http://rhatdan.wordpress.com/2014/04/30/running-systemd-within-a-docker-container/
     - http://lists.freedesktop.org/archives/systemd-devel/2014-May/018998.html
+
+* __Git__
+
+    Install Git to clone this repository and easily gain access to the included files, such as docker.service, a Systemd file to run Docker.
