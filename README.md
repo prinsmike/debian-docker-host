@@ -30,3 +30,10 @@ Follow the instructions at https://scottlinux.com/2014/05/04/how-to-install-and-
 ### docker.service
 
 Included in this repository, is a docker.service file that can be used to enable docker with Systemd. Copy the docker.service file to /lib/systemd/system/ and enable it with `systemctl enable docker.service`
+
+### Start docker containers with Systemd
+
+You can manage your docker containers with Systemd. This will allow you to start, stop and reload containers easily. Systemd can also restart your containers automatically whenever they fail. Look at the following resources for more information:
+
+* https://docs.docker.com/articles/host_integration/
+* http://coreos.com/docs/launching-containers/launching/getting-started-with-systemd/
