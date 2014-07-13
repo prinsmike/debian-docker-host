@@ -38,6 +38,11 @@ You can manage your docker containers with Systemd. This will allow you to start
 * https://docs.docker.com/articles/host_integration/
 * http://coreos.com/docs/launching-containers/launching/getting-started-with-systemd/
 
+Docker User
+-----------
+
+I like to set up a separate docker user to work with docker containers and volumes. I call this user dockeru. The dockeru user is given sudo privileges so it can be used to manage docker containers. I also like to create a dockeru directory in /var (with ownership assigned to the dockeru user), where shared docker volumes can be managed.
+
 HAProxy
 -------
 

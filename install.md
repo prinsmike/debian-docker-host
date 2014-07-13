@@ -6,9 +6,15 @@ This file provides some suggestions for software to install on a Debian host ins
 * __vim__
 
     A useful text editor that should be installed on all host operating systems as well as all docker containers that allow interactivity.
+
+* __sudo__
+
+    Sudo allows us to create a user with root privileges, while password protecting root privileges.
+
 * __OpenSSH__
 
     OpenSSH must be installed on all host operating systems. It is also useful if installed on interactive docker containers.
+
 * __Systemd__
 
     Systemd should be used to manage docker as well as all docker containers on the host operating system. Systemd is not currently a good solution for running services inside containers; instead, supervisord should be used until there is a straightforward way to utilize Systemd inside docker containers. Take a look at the following links for more information:
