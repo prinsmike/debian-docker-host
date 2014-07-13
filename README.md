@@ -43,6 +43,20 @@ Docker User
 
 I like to set up a separate docker user to work with docker containers and volumes. I call this user dockeru. The dockeru user is given sudo privileges so it can be used to manage docker containers. I also like to create a dockeru directory in /var (with ownership assigned to the dockeru user), where shared docker volumes can be managed.
 
+Modify the sudoers file, using `visudo`, and add the following line to give the dockeru user all sudo privileges:
+
+```
+dockeru ALL=(ALL) ALL
+```
+
+To make things a little easier on ourselves, we can extend the password timeout for sudo by adding the following line to our sudoers file:
+
+```
+Defaults timestamp_timeout=20
+```
+
+The time is given in minutes.
+
 HAProxy
 -------
 
