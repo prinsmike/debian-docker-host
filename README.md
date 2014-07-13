@@ -37,3 +37,8 @@ You can manage your docker containers with Systemd. This will allow you to start
 
 * https://docs.docker.com/articles/host_integration/
 * http://coreos.com/docs/launching-containers/launching/getting-started-with-systemd/
+
+HAProxy
+-------
+
+In order to run multiple services on the same port on the host machine, it might be necessary to redirect traffic on that port to the correct service using a reverse proxy. A good choice, that also supports load balancing, is HAProxy. There is a trusted HAProxy container available on the official docker registry at https://registry.hub.docker.com/u/dockerfile/haproxy/.

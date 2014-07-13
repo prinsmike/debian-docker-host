@@ -28,3 +28,10 @@ Docker
 * http://www.docker.com/
 * https://docs.docker.com/
 * https://registry.hub.docker.com/
+
+HAProxy
+-------
+
+* http://www.haproxy.org/
+* http://cbonte.github.io/haproxy-dconv/configuration-1.5.html
+* http://oskarhane.com/haproxy-as-a-static-reverse-proxy-for-docker-containers/
