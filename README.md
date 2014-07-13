@@ -26,3 +26,7 @@ Docker
 ------
 
 Follow the instructions at https://scottlinux.com/2014/05/04/how-to-install-and-run-docker-on-debian-wheezy/ to setup Docker on Debian.
+
+### docker.service
+
+Included in this repository, is a docker.service file that can be used to enable docker with Systemd. Copy the docker.service file to /lib/systemd/system/ and enable it with `systemctl enable docker.service`
