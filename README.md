@@ -41,12 +41,22 @@ You can manage your docker containers with Systemd. This will allow you to start
 Docker User
 -----------
 
-I like to set up a separate docker user to work with docker containers and volumes. I call this user dockeru. The dockeru user is given sudo privileges so it can be used to manage docker containers. I also like to create a dockeru directory in /var (with ownership assigned to the dockeru user), where shared docker volumes can be managed.
+I like to set up a separate docker user to work with docker containers and volumes. The docker user is given sudo privileges so it can be used to manage docker containers. The docker user's home directory is created in /var, where shared docker volumes can be managed.
+
+The user can be created with the following command:
+
+```
+useradd -m =g docker -s /bin/bash docker
+```
+
+Make sure to give the user a strong password since the docker group is root-equivalent. See the following link for more details:
+
+http://docs.docker.io.s3-website-us-west-2.amazonaws.com/articles/security/#dockersecurity-daemon
 
 Modify the sudoers file, using `visudo`, and add the following line to give the dockeru user all sudo privileges:
 
 ```
-dockeru ALL=(ALL) ALL
+docker ALL=(ALL) ALL
 ```
 
 To make things a little easier on ourselves, we can extend the password timeout for sudo by adding the following line to our sudoers file:
