@@ -46,7 +46,7 @@ I like to set up a separate docker user to work with docker containers and volum
 The user can be created with the following command:
 
 ```
-useradd -m =g docker -s /bin/bash docker
+useradd -m -g docker -s /bin/bash -d /var/docker docker
 ```
 
 Make sure to give the user a strong password since the docker group is root-equivalent. See the following link for more details:
